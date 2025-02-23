@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #151f28;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 10px;
+}
+
+.box {
+    background: #222;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+
+.input-box span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #888;
+    transition: 0.3s;
+}
+
+.input-box input:focus ~ span,
+.input-box input:valid ~ span {
+    top: -10px;
+    left: 8px;
+    color: #00eeff;
+    font-size: 12px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #00eeff;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0099cc;
+}
+
+.imp-links a {
+    color: #00eeff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.imp-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do cabeçalho com ícone de usuário */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e02a8;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.logout-btn {
+    background: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #d63030;
+}
